@@ -1,0 +1,9 @@
+For this activity, I selected the Proximal Policy Optimization (PPO) algorithm because it is one of the most widely used reinforcement learning algorithms and works well with both discrete and continuous action spaces. For the hyperparameters, I used the default PPO settings provided by AWS DeepRacer, including a moderate learning rate, batch size, and entropy value. These settings provided a balance between exploration and exploitation while allowing the model to learn stable driving behaviors over time.
+
+I selected the re:Invent 2018 track because it contains a variety of curves and straightaways that provide a good balance between difficulty and training efficiency. The track offered enough complexity to evaluate how well the model could generalize its driving strategy without being excessively challenging.
+
+The model was reasonably successful on the track after training for over 60 minutes. Success can be measured using metrics such as lap completion percentage, reward progression, average speed, and the number of off-track events. While the model completed the track more consistently over time, additional training time and hyperparameter tuning could further improve performance.
+
+For the reward function, I rewarded the vehicle for staying close to the center line and remaining on the track. This reward structure encourages stable driving behavior and reduces the likelihood of crashes or off-track penalties. I selected this approach because maintaining lane position is a fundamental requirement before optimizing for speed.
+
+To make the model more generalizable, I would train it on multiple tracks, vary environmental conditions, and continue tuning hyperparameters. This would allow the agent to learn broader driving behaviors instead of overfitting to a single track configuration.
