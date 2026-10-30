@@ -26,6 +26,14 @@ dist/
 .coverage
 htmlcov/
 
+# MIT ADS
+*.zip
+*.bak
+*.tmp
+
 # OS
 .DS_Store
 Thumbs.db
+
+# Temporary Setup Files
+create_module21_structure.bat
